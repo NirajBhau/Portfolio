@@ -301,6 +301,22 @@ button {
   background-color: #e55a4e;
 }
 
+.form-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
+}
+
+.form-button:hover {
+  background-color: #45a049;
+}
+
+
 /* Social Links */
 .social-links {
   margin-top: 2rem;
@@ -322,6 +338,54 @@ footer {
   background-color: #333;
   color: white;
   padding: 2rem 0;
+}
+/* Bottom-left icons container */
+.bottom-left-icons {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+/* Common styles for social buttons */
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+  color: white;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 24px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover effect for social buttons */
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Specific styles for LinkedIn */
+.social-icon.linkedin {
+  background-color: #0077b5;
+}
+
+.social-icon.linkedin:hover {
+  background-color: #005582;
+}
+
+/* Specific styles for GitHub */
+.social-icon.github {
+  background-color: #333;
+}
+
+.social-icon.github:hover {
+  background-color: #444;
 }
 
 .footer-content {
@@ -382,3 +446,4 @@ footer {
     gap: 1rem;
   }
 }
+
