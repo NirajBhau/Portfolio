@@ -95,6 +95,20 @@ button {
   margin: 0 10px; /* Add some spacing between buttons */
 }
 
+/* Responsive Design for Buttons */
+@media (max-width: 768px) {
+  .hero-content button {
+    display: block; /* Stack buttons vertically */
+    width: 80%; /* Adjust button width */
+    margin: 10px auto; /* Center buttons and add spacing */
+  }
+
+  button a {
+    font-size: 1rem; /* Adjust text size */
+    padding: 10px 20px; /* Adjust padding for mobile */
+  }
+}
+
 /* Specific styling for resume button */
 .resume-btn a {
   background-color: #4CAF50; /* Green color for the resume button */
